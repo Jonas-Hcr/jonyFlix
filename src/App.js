@@ -12,7 +12,7 @@ function App() {
         <BannerMain
           videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
           url={dadosIniciais.categorias[0].videos[0].url}
-          videoDescription={"Quando você menos espera, tudo começa e tudo termina, então curta a vida como se fosse a última vez!"}
+          videoDescription={"Então mire as estrelas e salte o mais alto que der! Tome distância, e faça o melhor que puder! Só não se permita viver na sombra do talvez... Aqui só se vive uma vez!"}
         />
 
         <Carousel

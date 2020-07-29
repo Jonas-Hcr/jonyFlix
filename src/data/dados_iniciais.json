@@ -10,8 +10,8 @@
       },
       "videos": [
         {
-          "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+          "titulo": "'Viver sem uma Fé, sem um patrimônio para defender, sem sustentar a Verdade numa luta contínua, não é viver, mas fingir que se vive.'",
+          "url": "https://www.youtube.com/watch?v=U2nq2KqEeYI"
         },
         {
           "titulo": "SEO com React",
@@ -74,28 +74,32 @@
       ]
     },
     {
-      "titulo": "Data Science e Inteligência Artificial",
+      "titulo": "Músicas",
       "cor": "#9cd33b",
       "link_extra": {
-        "text": "Cursos de Data Science na Alura",
-        "url": "https://www.alura.com.br/formacao-data-science"
+        "text": "Playlist de Músicas",
+        "url": "https://music.youtube.com/channel/UCqIQRxCUGi7hyJisyzv9zYQ"
       },
       "videos": [
         {
-          "titulo": "Teste de Turing",
-          "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+          "titulo": "With or Without You",
+          "url": "https://music.youtube.com/watch?v=fRBOfkeCF7A&list=PLEsW0I4D4LQaZ-pTaQXbobxsRsNZI7DXw"
         },
         {
-          "titulo": "O que é Data Science?",
-          "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+          "titulo": "Let it be",
+          "url": "https://music.youtube.com/watch?v=QDYfEBY9NM4&list=RDAMVMQDYfEBY9NM4"
         },
         {
-          "titulo": "Melhor forma de aprender Python",
-          "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
+          "titulo": "Beautiful day",
+          "url": "https://music.youtube.com/watch?v=QrqPjFyM0wg&list=PLEsW0I4D4LQaZ-pTaQXbobxsRsNZI7DXw"
         },
         {
-          "titulo": "Como ingressar no mercado de Data Science?",
-          "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
+          "titulo": "Eu Sou (part. Guilherme de Sá)",
+          "url": "https://music.youtube.com/watch?v=XvTvBBfaa8Q&list=PL8qUScpBIbEhHT7foREqtoMjK8pyb5ENv"
+        },
+        {
+          "titulo": "Folhas ao Chão e With or Without You ",
+          "url": "https://music.youtube.com/watch?v=oSq5BHpNSss&list=RDAMVMoSq5BHpNSss"
         }
       ]
     },
