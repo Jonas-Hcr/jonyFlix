@@ -20,11 +20,10 @@ function CadastroCategoria() {
     })
   }
 
-  function handleChange(infos) {
-    const { getAttribute, value } = infos.target;
+  function handleChange(infosDoEvento) {
     setValor(
-      getAttribute('name'),
-      value
+      infosDoEvento.target.getAttribute('name'),
+      infosDoEvento.target.value
     );
   }
 
