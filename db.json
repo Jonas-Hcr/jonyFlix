@@ -1,0 +1,16 @@
+{
+    "categorias": [
+        {
+            "id": 1,
+            "nome": "Front End",
+            "categoria": "Videos Tech",
+            "cor": "#cbd1ff"
+        },
+        {
+            "id": 2,
+            "nome": "Back End",
+            "categoria": "Programação",
+            "cor": "#cbd1ff"
+        }
+    ]
+}
