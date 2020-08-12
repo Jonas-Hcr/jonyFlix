@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
+import useForm from '../../../hocks/useForm';
 
 function CadastroCategoria() {
   const [categorias, setCategorias] = useState([]);
@@ -12,32 +13,17 @@ function CadastroCategoria() {
     descricao: '',
     cor: '',
   };
-  const [valores, setValores] = useState(valoresIniciais);
 
-  function setValor(chave, valor) {
-    setValores({
-      ...valores,
-      [chave]: valor,
+  const { handleChange, valores, clearForm } = useForm(valoresIniciais);
+
+  const URL_SERVER = window.location.hostname.includes('localhost') ? 'http://localhost:8080/categorias' : 'https://jony-flix.herokuapp.com/categorias';
+  fetch(URL_SERVER)
+    .then(async (respostaServidor) => {
+      const resposta = await respostaServidor.json();
+      setCategorias([
+        ...resposta,
+      ]);
     });
-  }
-
-  function handleChange(infosDoEvento) {
-    setValor(
-      infosDoEvento.target.getAttribute('name'),
-      infosDoEvento.target.value,
-    );
-  }
-
-  useEffect(() => {
-    const URL_SERVER = window.location.hostname.includes('localhost') ? 'http://localhost:8080/categorias' : 'https://jony-flix.herokuapp.com/categorias';
-    fetch(URL_SERVER)
-      .then(async (respostaServidor) => {
-        const resposta = await respostaServidor.json();
-        setCategorias([
-          ...resposta,
-        ]);
-      });
-  }, []);
 
   return (
     <PageDefault>
@@ -52,7 +38,7 @@ function CadastroCategoria() {
           ...categorias,
           valores,
         ]);
-        setValores(valoresIniciais);
+        clearForm(valoresIniciais);
       }}
       >
         <FormField
@@ -85,15 +71,15 @@ function CadastroCategoria() {
       </form>
 
       {categorias.length === 0 && (
-      <div>
-        Loading...
-      </div>
+        <div>
+          Loading...
+        </div>
       )}
 
       <ul>
         {categorias.map((categoria) => (
-          <li key={`${categoria.nome}`}>
-            {categoria.nome}
+          <li key={`${categoria.titulo}`}>
+            {categoria.titulo}
           </li>
         ))}
       </ul>
